@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan - Text to Image Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">AZAN</h1>
+            <p class="tagline">Transform your imagination into stunning visuals with our powerful AI text-to-image generator</p>
+        </header>
+        
+        <main>
+            <div class="generator-card">
+                <form class="prompt-form" id="prompt-form">
+                    <div class="input-group">
+                        <label for="prompt"><i class="fas fa-pencil-alt"></i> Describe your image</label>
+                        <textarea id="prompt" placeholder="Enter a detailed description..."></textarea>
+                        <div class="examples">
+                            <div class="example-chip" data-prompt="A futuristic cityscape at night">Futuristic City</div>
+                            <div class="example-chip" data-prompt="A serene mountain lake at sunrise">Mountain Lake</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="generate-btn" id="generate-btn">
+                        <i class="fas fa-magic"></i> Generate Image
+                    </button>
+                </form>
+            </div>
+            
+            <div class="results-section">
+                <h2 class="section-title">Generated Images</h2>
+                <div class="gallery" id="gallery">
+                    <div class="image-card placeholder">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Your generated images will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>Azan Text-to-Image Generator &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
